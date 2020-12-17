@@ -1,0 +1,3 @@
+<search-input></search-input>
+<w-swiper list="{{banners}}"></w-swiper>
+<navbar navbarInfo="{{navbarInfo}}"></navbar>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-input":"/components/searchInput/searchInput",
+    "w-swiper":"/components/w-swiper/w-swiper",
+    "navbar":"././childCom/navbar/navbar"
+  },
+  "navigationBarTitleText": "我的首页"
+}

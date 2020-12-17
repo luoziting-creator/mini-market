@@ -1,0 +1,11 @@
+/* pages/index/childCom/navbar/navbar.wxss */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar_image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx 0;
+  
+}

@@ -1,0 +1,8 @@
+<!--pages/index/childCom/navbar/navbar.wxml-->
+<!-- <text>pages/index/childCom/navbar/navbar.wxml</text> -->
+<view class="navbar">
+  <block wx:for="{{navbarInfo}}" wx:key="name">
+    <image src="{{item.image_src}}" class="navbar_image"></image>
+  </block>
+</view>
+
