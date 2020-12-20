@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    
+    "w-detail-info":"./w-detail-info/w-detail-info"
+  },
+  "navigationBarTitleText": "商品详情"
 }

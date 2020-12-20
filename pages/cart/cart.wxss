@@ -1,1 +1,122 @@
 /* pages/cart/cart.wxss */
+page {
+  padding-bottom: 90rpx;
+}
+.revice_address_row .address_btn {
+  padding: 20rpx;
+}
+.revice_address_row .address_btn button {
+  width: 60%;
+  font-weight: normal;
+}
+.user_info_row {
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.cart_content .cart_title {
+  font-size: 32rpx;
+  border-top: 2rpx solid var(--themeColor);
+  border-bottom: 2rpx solid var(--themeColor);
+  padding: 20rpx;
+  color: var(--themeColor);
+}
+.cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.cart_content .cart_main .cart_item .cart_che_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_item navigator.cart_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_item navigator.cart_img_wrap image {
+  width: 80%;
+  height: 200rpx;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #666;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 30rpx;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_tool {
+  display: flex;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_tool .cart_edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rpx;
+  height: 55rpx;
+  border: 2rpx solid #ccc;
+}
+.cart_content .cart_main .cart_item .cart_info_wrap .goods_price_wrap .cart_tool .goods_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rpx;
+  height: 55rpx;
+}
+.footer_tool {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #ccc;
+}
+.footer_tool .all_check_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_tool .total_price_wrap {
+  flex: 5;
+  text-align: right;
+  padding-right: 20rpx;
+}
+.footer_tool .total_price_wrap .toal_price text.total_price_text {
+  color: var(--themeColor);
+}
+.footer_tool .total_price_wrap .file {
+  font-size: 24rpx;
+}
+.footer_tool .order_pay_wrap {
+  flex: 3;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+}

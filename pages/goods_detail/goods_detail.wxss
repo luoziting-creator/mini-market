@@ -1,1 +1,66 @@
 /* pages/goods_detail/goods_detail.wxss */
+swiper {
+  width: 100%;
+  height: calc(65vw *400 / 400);
+  text-align: center;
+}
+image {
+  width: 60%;
+ 
+}
+.btm_tool {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #fff;
+  height: 90rpx;
+  border-top: 2rpx solid #ccc;
+
+}
+.toolListOne {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.toolListOne button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.toolListOne .iconfont {
+  margin: 10rpx 0 8rpx 0;
+  color: #7A7D79;
+  font-size: 36rpx;
+
+}
+.toolListOne view {
+  font-size: 24rpx;
+
+}
+.tool_list {
+  display: flex;
+  color: #fff;
+  line-height: 90rpx;
+  text-align: center;
+  width: 300rpx;
+}
+.tool_list .shopcar{
+  width: 150rpx;
+  background-color: #FFAC00;
+
+}
+.buy {
+  width: 150rpx;
+  background-color: #FF5A55;
+}

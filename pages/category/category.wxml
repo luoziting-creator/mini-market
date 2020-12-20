@@ -1,2 +1,16 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<!-- pages/category/category.wxml -->
+<!-- <text>pages/category/category.wxml</text> -->
+<view class="cates">
+  <searchInput></searchInput>
+  <view class="cates_container">
+    <scroll-view scroll-y class="left-menu">
+      <!-- 左侧菜单 -->
+      <w-left-menu-list leftMenuList="{{leftMenuList}}" bind:menuclick="menuclick"></w-left-menu-list>
+    </scroll-view>
+    <scroll-view scroll-y class="right-content" scroll-top="{{scrollTop}}">
+     <w-right-content rightContent="{{rightContent}}"></w-right-content>
+      
+    </scroll-view>
+      
+  </view>
+</view>

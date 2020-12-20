@@ -1,0 +1,6 @@
+<!-- pages/category/w-left-menu-list/w-left-menu-list.wxml -->
+<!-- <text>pages/category/w-left-menu-list/w-left-menu-list.wxml</text> -->
+<view class="menuList {{index === currentIndex? 'active' : ''}}"
+ wx:for="{{leftMenuList}}" wx:key="cat_id" data-index="{{index}}" bindtap="onItemClick">
+  {{item}}
+</view>

@@ -1,0 +1,20 @@
+/* pages/index/childCom/floorInfo/floorInfo.wxss */
+.floor_title {
+  margin: 20rpx 0;
+  width: 522rpx;
+  height: 63rpx;
+}
+.floor_title image {
+  width: 100%;
+}
+.floor_list navigator {
+  float: left;
+  width: 33.33%;
+}
+.floor_list navigator:nth-last-child(-n+4) image {
+  /* 原图的宽高 232 *386 */
+  height: 27.72711207vw;
+}
+.floor_list navigator image {
+  width: 100%;
+}

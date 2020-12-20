@@ -1,0 +1,10 @@
+/* pages/goods_detail/w-detail-swiper/w-detail-swiper.wxss */
+swiper {
+  width: 100%;
+  height: calc(65vw *400 / 400);
+  text-align: center;
+}
+image {
+  width: 60%;
+ 
+}

@@ -1,0 +1,13 @@
+<!-- pages/category/w-right-content/w-right-content.wxml -->
+<!-- <text>pages/category/w-right-content/w-right-content.wxml</text> -->
+<view class="content_group" wx:for="{{rightContent}}" wx:key="cat_id" wx:for-item="item1">
+  <view class="content_title">/ {{item1.cat_name}} /</view>
+  <view class="content_body">
+    <navigator wx:for="{{item1.children}}" wx:key="cat_id" wx:for-item="item2" url="/pages/goods_list/goods_list?cid={{item2.cat_id}}"  >
+      <view class="content_list">
+        <image src="{{item2.cat_icon}}" class="icons"></image>
+        <view class="icon_title">{{item2.cat_name}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>

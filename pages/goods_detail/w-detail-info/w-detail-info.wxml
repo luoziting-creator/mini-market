@@ -1,0 +1,18 @@
+<!-- pages/goods_detail/w-detail-info/w-detail-info.wxml -->
+<!-- <text>pages/goods_detail/w-detail-info/w-detail-info.wxml</text> -->
+<view class="detail-info">
+  <view class="detail_price">￥{{goodsObj.goods_price}}</view>
+  <view class="detail_row">
+    <view class="detail_name">{{goodsObj.goods_name}}{{goodsObj.goods_name}}</view>
+    <view class="detail_icon">
+      <text class="iconfont icon-shoucang1"></text>
+      <view class="collect_text">收藏</view>
+    </view>
+  </view>
+  <view class="goods_info">
+    <view class="goods_title">图文详情</view>
+    <view class="goods_content">
+      <rich-text nodes="{{goodsObj.goods_introduce}}"></rich-text>
+    </view>
+  </view>
+</view>

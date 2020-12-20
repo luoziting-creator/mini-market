@@ -1,0 +1,61 @@
+/* pages/goods_detail/w-detail-info/w-detail-info.wxss */
+@import "../../../styles/iconfont.wxss";
+
+.detail-info .detail_price {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #F1607A;
+  padding: 15rpx;
+}
+
+.detail-info .detail_row {
+  display: flex;
+  border-bottom: 6rpx solid #dedede;
+  padding: 20rpx;
+
+}
+
+.detail-info .detail_row .detail_name {
+  flex: 5;
+  color: #7F868A;
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+
+}
+
+.detail-info .detail_row .detail_icon {
+  flex: 1;
+  border-left: 1px solid #BDC0BC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60rpx;
+
+
+}
+
+.detail-info .detail_row .detail_icon .iconfont {
+  width: 60rpx;
+  height: 30rpx;
+  padding-left: 10rpx;
+
+}
+
+.detail-info .detail_row .detail_icon .collect_text {
+  margin-top: 10rpx;
+  color: #7F868A;
+  font-size: 26rpx;
+}
+
+.goods_info .goods_title {
+  font-size: 32rpx;
+  color: #EC6C7B;
+  padding: 20rpx;
+  border-bottom: 6rpx solid #dedede;
+  font-weight: 700;
+
+}

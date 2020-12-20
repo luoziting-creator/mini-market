@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "searchInput":"/components/searchInput/searchInput",
+    "w-left-menu-list":"./w-left-menu-list/w-left-menu-list",
+    "w-right-content":"./w-right-content/w-right-content"
+  },
+  "navigationBarTitleText": "商品分类"
+
 }

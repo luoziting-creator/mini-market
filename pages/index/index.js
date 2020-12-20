@@ -1,4 +1,4 @@
-import {getSwiperData,getNavbarData } from '../../services/home.js'
+import {getSwiperData,getNavbarData,getFloorData } from '../../services/home.js'
 Page({
 
   /**
@@ -6,7 +6,8 @@ Page({
    */
   data: {
     banners:[],
-    navbarInfo:[]
+    navbarInfo:[],
+    floorInfo:[]
     
   },
 
@@ -18,13 +19,15 @@ Page({
     this._getSwiperData()
     // 获取nabvbar的数据
     this._getNavbarData()
+    // 获取楼层数据
+    this._getFloorData()
 
     
   },
 // 获取轮播图数据
 _getSwiperData(){
   getSwiperData().then(res=>{
-    console.log(res)
+    // console.log(res)
     // 1.  获取轮播图数据
     const banners =res.data.message
     // console.log(banners)
@@ -42,6 +45,16 @@ _getNavbarData(){
     const navbarInfo=res.data.message
     this.setData({
       navbarInfo
+    })
+  })
+},
+// 获取楼层数据
+_getFloorData(){
+  getFloorData().then(res=>{
+    console.log(res);
+    const floorInfo =res.data.message
+    this.setData({
+      floorInfo
     })
   })
 },

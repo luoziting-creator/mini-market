@@ -1,2 +1,35 @@
 <!--pages/goods_detail/goods_detail.wxml-->
-<text>pages/goods_detail/goods_detail.wxml</text>
+<!-- <text>pages/goods_detail/goods_detail.wxml</text> -->
+<view class="detail_swiper">
+  <swiper class="swiper" circular autoplay interval="3000" duration="300" indicator-dots indicator-active-color="#000">
+    <block wx:for="{{goodsObj.pics}}" wx:key="pics_id">
+      <swiper-item class="detail-item" bindtap="handlePreviewImage" data-url="{{item.pics_mid}}">
+        <image src="{{item.pics_mid}}" mode="widthFix"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<w-detail-info goodsObj="{{goodsObj}}" GoodsInfo="{{GoodsInfo}}"></w-detail-info>
+<view class="btm_tool">
+    <view class="toolListOne">
+      <text class="iconfont icon-fuwupingjia-kefu"></text>
+      <view>联系客服</view>
+      <button open-type="contact" ></button>
+    </view>
+    <view class="toolListOne">
+      <text class="iconfont icon-fenxiang"></text>
+      <view>分享</view>
+      <button open-type="share"></button>
+    </view>
+    <navigator class="toolListOne" url="/pages/cart/cart" open-type="switchTab">
+      <text class="iconfont icon-gouwuche"></text>
+      <view>购物车</view>
+    </navigator>
+ 
+  <view class="tool_list">
+    <view class="shopcar" bindtap="handleAddCar">加入购物车</view>
+    <view class="buy">立即购买</view>
+  </view>
+
+
+</view>

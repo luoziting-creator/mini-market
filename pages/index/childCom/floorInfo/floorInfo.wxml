@@ -1,0 +1,19 @@
+<!--pages/index/childCom/floorInfo/floorInfo.wxml-->
+<!-- <text>pages/index/childCom/floorInfo/floorInfo.wxml</text> -->
+<view class="index_floor">
+  <block class="floor_group" wx:for="{{floorInfo}}" wx:key="floor_title" wx:for-item="item1" wx:for-index="index1">
+      <!-- 标题 -->
+      <view class="floor_title">
+        <image src="{{item1.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <!-- 内容 -->
+      <view class="floor_list" >
+        <navigator wx:for="{{item1.product_list}}" wx:key="name" wx:for-item="item2" wx:for-index="index2">
+          <image src="{{item2.image_src}}"  mode="{{index2 === 0 ? 'widthFix' :'scaleToFill'}}"></image>
+        </navigator>
+      </view>
+
+
+  </block>
+
+</view>

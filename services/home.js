@@ -10,3 +10,11 @@ export function getNavbarData(){
     url:'/home/catitems',
   })
 }
+
+
+export function getFloorData(){
+  return request({
+    url:'/home/floordata',
+  })
+}
+

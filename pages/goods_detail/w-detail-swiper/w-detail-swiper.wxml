@@ -1,0 +1,11 @@
+<!--pages/goods_detail/w-detail-swiper/w-detail-swiper.wxml-->
+<!-- <text>pages/goods_detail/w-detail-swiper/w-detail-swiper.wxml</text> -->
+<view class="detail_swiper">
+  <swiper class="swiper" circular autoplay interval="3000" duration="300" indicator-dots indicator-active-color="#000">
+    <block wx:for="{{goodsObj.pics}}" wx:key="pics_id">
+      <swiper-item class="detail-item" bindtap="handlePreviewImage">
+      <image src="{{item.pics_mid}}" mode="widthFix"></image>
+    </swiper-item>
+    </block>
+  </swiper>
+</view>
